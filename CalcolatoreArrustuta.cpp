@@ -4,8 +4,6 @@ using namespace std;
 int main(){
     cout << "CalcolatoreArrustuta\n" << endl;
 
-    int numeroTipologieCarne = 6;
-
     // Caricamento Numero Partecipanti
     int numeroPartecipanti;
     cout << "Inserire il numero dei partecipanti: ";
@@ -18,6 +16,8 @@ int main(){
         cout << "Inserire il nome del partecipante n." << i + 1 << " (In Maiuscolo): ";
         cin >> Partecipanti[i];
     }
+
+    int numeroTipologieCarne = 6;
 
     // Creazione Array della Carne
     string carne[numeroTipologieCarne] = {"SALSICCIA SEMPLICE", "SALSICCIA CONDITA", "POLPETTA DI CAVALLO", 
