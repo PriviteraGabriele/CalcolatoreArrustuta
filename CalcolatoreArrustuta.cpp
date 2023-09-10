@@ -31,12 +31,6 @@ int main(){
         cin >> costoTotalePerTipologia[i];
     }
 
-    // // Stampa Array costoTotalePerTipologia
-    // cout << endl;
-    // for(int i = 0; i<numeroTipologieCarne; i++){
-    //     cout << carne[i] << ": " << costoTotalePerTipologia[i] << " euro" << endl;
-    // }
-
     // Mi creo una matrice per poter segnare il quantitativo per tipologia di carne che ha preso ogni partecipante, 
     // ogni riga rappresenta un partecipante e ogni colonna una tipologia di carne
     int matriceConsumoCarne[numeroPartecipanti][numeroTipologieCarne];
@@ -66,11 +60,6 @@ int main(){
         }
     }
 
-    // // Stampa numeroTotPezziPerTipologia
-    // for(int i = 0; i<numeroTipologieCarne; i++){
-    //     cout << carne[i] << ": " << numeroTotPezziPerTipologia[i] << endl;
-    // }
-
     // Creazione Array del costo al singolo pezzo per tipologia di carne
     double costoAlSingoloPezzoPerTipologia[numeroTipologieCarne];
     for(int i = 0; i<numeroTipologieCarne; i++){
@@ -94,5 +83,22 @@ int main(){
     cout << endl;
     for(int i = 0; i<numeroPartecipanti; i++){
         cout << Partecipanti[i] << " -> " << totalePerPersona[i] << " euro" << endl;
+    }
+
+    // Ipotesi ulteriori spese (es. Bevande, patatine, ...)
+    string extra;
+    cout << "\nCi sono ulteriori spese da dividere (es. bevande, patatine, ...)? "; 
+    cin >> extra;
+
+    if(extra == "Si" || extra == "SI"  || extra == "si"){
+        double spesaExtra;
+        cout << "\nInserire il costo della spesa da dividere alla romana: ";
+        cin >> spesaExtra;
+
+        // Stampa totalePerPersona
+        cout << "\nTotale per persona della carne + " << (spesaExtra/numeroPartecipanti) << " della spesa:" << endl;
+        for(int i = 0; i<numeroPartecipanti; i++){
+            cout << Partecipanti[i] << " -> " << totalePerPersona[i] + (spesaExtra/numeroPartecipanti) << " euro" << endl;
+        }
     }
 }
