@@ -1,11 +1,15 @@
-- Programmino / App CalcolatoreArrustuta
+- CalcolatoreArrustuta
 
-L'App si occuperà, dopo aver fornito il numero di partecipanti (con i rispettivi nomi), 
-il quantitativo per tipologia di carne che hanno preso e il costo della carne (al singolo pezzo), 
+Il Programma si occuperà, dopo aver fornito il numero di partecipanti (con i rispettivi nomi), 
+il quantitativo per tipologia di carne che ha preso ogni persona e il costo totale della carne (per tipologia di carne), 
 di ritornare il conto personalizzato per ogni persona.
 
-Idee:
-Per l'inserimento dei dati si baserà tutto su input da tastiera, conviene fare una lista con 
-tutti i tipi di carne che si prendono di solito e poi per ogni persona selezionare il quantitativo 
-di carne che hanno preso
+È stata aggiunta la possibilità di dividere anche un'ipotetica spesa al di fuori della carne
+come ad esempio bevande, patatine, birra, ... (La suddivisione verrà fatta alla romana)
 
+Possibili miglioramenti o obiettivi futuri:
+    - Rendere anche la lista della carne "dinamica" con la possibilità di far aggiungere la tipologia di carne 
+      direttamente dall'utente stesso (Come avviene con la lista dei partecipanti);
+
+    - Cercare di trasformarla in un'App (Magari riscrivendo in codice in un linguaggio più consono all'obiettivo)
+    
