@@ -12,7 +12,7 @@ direttamente dall'utente stesso (Come avviene con la lista dei partecipanti);
 
 È stato fixato l'inserimento da tastiera, adesso è possibile aggiungere stringhe contenenti spazi 
 (Utili per l'inserimento di un cognome oltre al nome e per la carne per specificare meglio la tipologia 
-es. piedino alla messinese, salsiccia condita, ...)
+es. spiedino alla messinese, salsiccia condita, ...)
 
 Possibili miglioramenti o obiettivi futuri:
 
