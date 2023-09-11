@@ -1,15 +1,25 @@
 - CalcolatoreArrustuta
 
-Il Programma si occuperà, dopo aver fornito il numero di partecipanti (con i rispettivi nomi), 
-il quantitativo per tipologia di carne che ha preso ogni persona e il costo totale della carne (per tipologia di carne), 
-di ritornare il conto personalizzato per ogni persona.
+Il Programma si occuperà, dopo aver fornito il numero di partecipanti (con i rispettivi nomi), il numero delle diverse 
+tipologie di carne(con i rispettivi nomi), il costo totale della carne (per tipologia di carne) e il quantitativo per 
+tipologia di carne che ha preso ogni persona, di ritornare il conto personalizzato per ogni persona.
 
 È stata aggiunta la possibilità di dividere anche un'ipotetica spesa al di fuori della carne
 come ad esempio bevande, patatine, birra, ... (La suddivisione verrà fatta alla romana)
 
+È stata resa anche la lista della carne "dinamica" con la possibilità di far aggiungere la tipologia di carne 
+direttamente dall'utente stesso (Come avviene con la lista dei partecipanti);
+
+È stato fixato l'inserimento da tastiera, adesso è possibile aggiungere stringhe contenenti spazi 
+(Utili per l'inserimento di un cognome oltre al nome e per la carne per specificare meglio la tipologia 
+es. piedino alla messinese, salsiccia condita, ...)
+
 Possibili miglioramenti o obiettivi futuri:
-    - Rendere anche la lista della carne "dinamica" con la possibilità di far aggiungere la tipologia di carne 
-      direttamente dall'utente stesso (Come avviene con la lista dei partecipanti);
+
+    - Fare qualche test in più con un numero maggiore di persone (Provare numeroPartecipanti <= 7 e poi >= 7) 
+      [Forse dall'ottavo partecipante in poi si spacca l'array totalePerPersona {Da valori sbagliati troppo alti}]
 
     - Cercare di trasformarla in un'App (Magari riscrivendo in codice in un linguaggio più consono all'obiettivo)
+
+
     

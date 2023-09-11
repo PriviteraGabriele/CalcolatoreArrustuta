@@ -1,4 +1,5 @@
 #include<iostream>
+#include <limits>
 using namespace std;
 
 int main(){
@@ -10,18 +11,37 @@ int main(){
     cin >> numeroPartecipanti;
     cout << endl;
 
+    // Pulisce il buffer dopo l'input del numeroPartecipanti (Evita che venga skippato in automatico il primo inserimento)
+    cin.ignore(numeric_limits<streamsize>::max(), '\n');
+
     // Creazione Array col nome dei partecipanti
     string Partecipanti[numeroPartecipanti];
     for(int i = 0; i<numeroPartecipanti; i++){
         cout << "Inserire il nome del partecipante n." << i + 1 << " (In Maiuscolo): ";
-        cin >> Partecipanti[i];
+        getline(cin, Partecipanti[i]);
     }
 
-    int numeroTipologieCarne = 6;
+    // Caricamento numeroTipologieCarne
+    int numeroTipologieCarne;
+    cout << "\nInserire il numero delle diverse tipologie di carne: ";
+    cin >> numeroTipologieCarne;
+    cout << endl;
 
-    // Creazione Array della Carne
-    string carne[numeroTipologieCarne] = {"SALSICCIA SEMPLICE", "SALSICCIA CONDITA", "POLPETTA DI CAVALLO", 
-                                          "SPIEDINI ALLA MESSINESE", "CIPOLLATA", "SPIEDINI AL PISTACCHIO"};
+    // Pulisce il buffer dopo l'input del numeroTipologieCarne (Evita che venga skippato in automatico il primo inserimento)
+    cin.ignore(numeric_limits<streamsize>::max(), '\n');
+
+    // Creazione Array col nome dei partecipanti
+    string carne[numeroTipologieCarne];
+    for(int i = 0; i<numeroTipologieCarne; i++){
+        cout << "Inserire il nome della tipologia di carne n." << i + 1 << " (In Maiuscolo): ";
+        getline(cin, carne[i]);
+    }
+
+    // int numeroTipologieCarne = 6;
+
+    // // Creazione Array della Carne
+    // string carne[numeroTipologieCarne] = {"SALSICCIA SEMPLICE", "SALSICCIA CONDITA", "POLPETTA DI CAVALLO", 
+    //                                       "SPIEDINI ALLA MESSINESE", "CIPOLLATA", "SPIEDINI AL PISTACCHIO"};
 
     // Creazione Array del costo totale per tipologia di carne
     cout << endl;
@@ -96,7 +116,7 @@ int main(){
         cin >> spesaExtra;
 
         // Stampa totalePerPersona
-        cout << "\nTotale per persona della carne + " << (spesaExtra/numeroPartecipanti) << " della spesa:" << endl;
+        cout << "\nTOTALE -> Conto personalizzato carne + " << (spesaExtra/numeroPartecipanti) << " della spesa:\n" << endl;
         for(int i = 0; i<numeroPartecipanti; i++){
             cout << Partecipanti[i] << " -> " << totalePerPersona[i] + (spesaExtra/numeroPartecipanti) << " euro" << endl;
         }
