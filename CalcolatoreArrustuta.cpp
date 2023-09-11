@@ -45,8 +45,8 @@ int main(){
         cin >> costoTotalePerTipologia[i];
     }
 
-    // Mi creo una matrice per poter segnare il quantitativo per tipologia di carne che ha preso ogni partecipante, 
-    // ogni riga rappresenta un partecipante e ogni colonna una tipologia di carne
+    // Mi creo una matrice per poter segnare il quantitativo per tipologia di carne che ha preso ogni partecipante 
+    // (Ogni riga rappresenta un partecipante e ogni colonna una tipologia di carne)
     int matriceConsumoCarne[numeroPartecipanti][numeroTipologieCarne];
 
     cout << endl;
