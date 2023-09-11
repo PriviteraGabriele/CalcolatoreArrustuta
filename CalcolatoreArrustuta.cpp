@@ -37,15 +37,9 @@ int main(){
         getline(cin, carne[i]);
     }
 
-    // int numeroTipologieCarne = 6;
-
-    // // Creazione Array della Carne
-    // string carne[numeroTipologieCarne] = {"SALSICCIA SEMPLICE", "SALSICCIA CONDITA", "POLPETTA DI CAVALLO", 
-    //                                       "SPIEDINI ALLA MESSINESE", "CIPOLLATA", "SPIEDINI AL PISTACCHIO"};
-
     // Creazione Array del costo totale per tipologia di carne
     cout << endl;
-    double costoTotalePerTipologia[numeroTipologieCarne];
+    double costoTotalePerTipologia[numeroTipologieCarne] = {0};
     for(int i = 0; i<numeroTipologieCarne; i++){
         cout << "Inserire il costo totale di " << carne[i] << ": ";
         cin >> costoTotalePerTipologia[i];
@@ -81,7 +75,7 @@ int main(){
     }
 
     // Creazione Array del costo al singolo pezzo per tipologia di carne
-    double costoAlSingoloPezzoPerTipologia[numeroTipologieCarne];
+    double costoAlSingoloPezzoPerTipologia[numeroTipologieCarne] = {0};
     for(int i = 0; i<numeroTipologieCarne; i++){
         costoAlSingoloPezzoPerTipologia[i] = costoTotalePerTipologia[i] / numeroTotPezziPerTipologia[i];
     }
