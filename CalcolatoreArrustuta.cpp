@@ -86,7 +86,7 @@ int main(){
     }
 
     // Array con i Totali per persona
-    double totalePerPersona[numeroTipologieCarne] = {0};
+    double totalePerPersona[numeroPartecipanti] = {0};
     for(int i = 0; i<numeroPartecipanti; i++){
         for(int j = 0; j<numeroTipologieCarne; j++){
             totalePerPersona[i] += matriceConsumoCarne[i][j] * costoAlSingoloPezzoPerTipologia[j];
