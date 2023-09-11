@@ -1,2 +1,2 @@
 # CalcolatoreArrustuta
-The Program will take care of, after providing the number of participants (with their respective names), the quantity by type of meat that each person took and the total cost of the meat (by type of meat), to return the personalized account for each person.
+The Program will, after providing the number of participants (with their respective names), the number of different types of meat (with their respective names), the total cost of the meat (by type of meat), and the amount by type of meat that each person took, return the personalized bill for each person.
