@@ -1,7 +1,7 @@
 - CalcolatoreArrustuta
 
 Il Programma si occuperà, dopo aver fornito il numero di partecipanti (con i rispettivi nomi), il numero delle diverse 
-tipologie di carne(con i rispettivi nomi), il costo totale della carne (per tipologia di carne) e il quantitativo per 
+tipologie di carne (con i rispettivi nomi), il costo totale della carne (per tipologia di carne) e il quantitativo per 
 tipologia di carne che ha preso ogni persona, di ritornare il conto personalizzato per ogni persona.
 
 È stata aggiunta la possibilità di dividere anche un'ipotetica spesa al di fuori della carne
