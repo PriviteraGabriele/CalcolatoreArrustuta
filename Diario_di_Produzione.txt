@@ -14,7 +14,7 @@ tipologia di carne che ha preso ogni persona, di ritornare il conto personalizza
              (Utili per l'inserimento di un cognome oltre al nome e per la carne per specificare meglio la tipologia 
              es. spiedino alla messinese, salsiccia condita, ...)
 
-(10/09/2023) È stato corretto un errore di logica nel codice che si presentava solo quando c'era un alto numero di 
+(12/09/2023) È stato corretto un errore di logica nel codice che si presentava solo quando c'era un alto numero di 
              partecipanti e un basso numero di tipologie di carne
 
 Possibili miglioramenti o obiettivi futuri:
