@@ -18,5 +18,5 @@ tipologia di carne che ha preso ogni persona, di ritornare il conto personalizza
              partecipanti e un basso numero di tipologie di carne
 
 Possibili miglioramenti o obiettivi futuri:
-
+    - Fare Refactoring
     - Cercare di trasformarla in un'App (Magari riscrivendo in codice in un linguaggio più consono all'obiettivo)
